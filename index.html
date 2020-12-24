@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Huckle Buckle</title>
+</head>
+<body>
+    <div container>
+        <div>
+            <h1>Welcome To Huckle Buckle Beanstalk</h1>
+            <h2>Please Choose A Number Between The Range (0 - 100) </h2>
+            <span id="errorMessage" class="errorMessage">
+                    Please Enter A Number As Guess Value!
+                </span>
+            <label>Guess Number:<input type="text" id="chosenNumber" name="chosenNumber" maxlength="3" placeholder="Guess Number!" required="required" />
+            </label>
+            <input type="button" value="Submit Guess" id="playBtn"  onclick = "playGuess()"/>
+            <input type="button" value="New Guess"   onclick = "refreshGuess()"/>
+    
+        </div>
+        <div id="responsePane">
+            <h2 id="response">Waiting For Your Guess:</h2>
+        </div>
+        <!-- <div id="chart_div" style="width: 600px; height: 220px;"></div> -->
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
